@@ -1,0 +1,3 @@
+com/github/kevin/hotfix/BaseApplication.class
+com/github/kevin/hotfix/BaseActivity.class
+com/github/kevin/hotfix/MainActivity.class
