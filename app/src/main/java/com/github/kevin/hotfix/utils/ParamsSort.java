@@ -11,10 +11,8 @@ public class ParamsSort {
      */
     public void math(Context context) {
         int a = 10;
+        //在此处修复后,重新打包提取classes2.dex供客户端下载
         int b = 0; //问题代码(分母不能为0)
-        b = 1; //修复代码
-
-        double result = a / b;
-        Toast.makeText(context, "math >>" + result, Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "math >>" + a/b, Toast.LENGTH_SHORT).show();
     }
 }

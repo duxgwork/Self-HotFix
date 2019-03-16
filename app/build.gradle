@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.github.kevin.hotfix"
-        minSdkVersion 21
+        minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -27,7 +27,7 @@ android {
         //配置multidex参数
         additionalParameters = [
                 '--multi-dex',//多dex分包
-                '--set-max-idx-number=60000',//每个dex中最多的方法数（默认值65535）
+                '--set-max-idx-number=50000',//每个dex中最多的方法数（默认值65535）
                 '--main-dex-list=' + '/multidex-config.txt',//指明你想哪些类打包到主dex
                 '--minimal-main-dex' //最小化主dex，保证主dex中只有上面参数指定的类
         ]
